@@ -78,10 +78,11 @@ function RadarChart(id, data, options, title) {
                 .enter().append("g");
     
     leg.append("text")
-                .attr("x", cfg.w* 0.39)
+                .attr("x", cfg.w* 0.5)
                 .attr("y", cfg.h*0.08)
                 .text(title)
-                .style("font-size", "14px");
+                .style("font-size", "14px")
+                .style("text-anchor", "middle");
     
     leg.append("text")
                 .attr("x", cfg.w - cfg.w * 0.15 +2)
